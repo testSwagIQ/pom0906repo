@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.pfl.automation.report.ExtentReporterNG"/>
+    <listener class-name="com.pfl.automation.report.CustomTestNGReporter"/>
+  </listeners>
+  <test thread-count="5" name="TestCase2(failed)">
+    <classes>
+      <class name="com.pfl.automation.org62.testcases.TS01_Administration_AssertTiles">
+        <methods>
+          <include name="Logout"/>
+          <include name="LogIn"/>
+          <include name="TS_01_01_Verify_administration_tiles"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TS_01_02_Verify_presence_of_different_components_on_Program_administration_page"/>
+        </methods>
+      </class> <!-- com.pfl.automation.org62.testcases.TS01_Administration_AssertTiles -->
+    </classes>
+  </test> <!-- TestCase2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
