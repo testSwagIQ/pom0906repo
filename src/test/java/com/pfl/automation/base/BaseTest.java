@@ -65,6 +65,7 @@ import com.codepine.api.testrail.model.ResultField;
 import com.codepine.api.testrail.model.Run;
 import com.codepine.api.testrail.model.Section;
 import com.codepine.api.testrail.model.Suite;
+import com.google.api.client.auth.oauth2.BrowserClientRequestUrl;
 import com.pfl.automation.org62.pages.AdminPage;
 import com.pfl.automation.org62.pages.ContactPage;
 import com.pfl.automation.org62.pages.HomePage;
@@ -115,10 +116,18 @@ public class BaseTest {
 	@BeforeTest
 	//@Parameters(value={"browser"})
 	public void setUp() throws Exception {
+
 		callBasicConfigFiles();
 		//initBrowser();
-		openBrowser();
-//		openBrowserGrid();
+		String RunOnSauceLab = prop.getProperty("RunOnSauceLabs");		
+
+		
+		if (RunOnSauceLab.equals("true")) {
+			openBrowserGrid();
+		}else {
+			openBrowser();				
+		}
+		
 		
 		//testngBrowserlaunch(browserName);
 		loginPage = new LoginPage(driver);
@@ -420,6 +429,10 @@ public class BaseTest {
         //set your test case name so that it shows up in Sauce Labs
         cap.setCapability("name", "1-first-test");
 
+        
+//        cap.setBrowserName(System.getenv("SELENIUM_BROWSER"));
+//        cap.setVersion(System.getenv("SELENIUM_VERSION"));
+//        cap.setCapability(CapabilityType.PLATFORM, System.getenv("SELENIUM_PLATFORM"));
 		
 		
 		try {

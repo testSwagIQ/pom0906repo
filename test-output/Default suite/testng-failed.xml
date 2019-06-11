@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pfl.automation.org62.testcases.TS01_Administration_AssertTiles">
+      <class name="com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag">
         <methods>
+          <include name="TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact"/>
           <include name="Logout"/>
           <include name="LogIn"/>
-          <include name="TS_01_01_Verify_administration_tiles"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="TS_01_02_Verify_presence_of_different_components_on_Program_administration_page"/>
         </methods>
-      </class> <!-- com.pfl.automation.org62.testcases.TS01_Administration_AssertTiles -->
+      </class> <!-- com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.pfl.automation.org62.testcases.TS02_lightning"/>
+      <class name="com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

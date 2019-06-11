@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Mohit\Desktop\pfl\project backups 28 may\pfl_pom_framework - Copy\testng.xml</span>
+                    <span>C:\Users\Mohit\Desktop\pfl\project backups 28 may\pom0906repo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pfl.automation.org62.testcases.TS02_lightning" hash-for-method="TC01">TC01</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag" hash-for-method="TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact">TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -120,39 +120,47 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.pfl.automation.org62.testcases.TS02_lightning</span>
+              <span class="class-name">com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01">
-                  </a> <!-- TC01 -->
-                  <span class="method-name">TC01</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;classic_home_tab&quot;}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+                  <a name="TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact">
+                  </a> <!-- TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact -->
+                  <span class="method-name">TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //img[contains(@title, &apos;All Tabs&apos;)] (tried for 50 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.pfl.automation.base.BasePage.findElement(BasePage.java:314)
+	at com.pfl.automation.base.BasePage.clickElement(BasePage.java:196)
+	at com.pfl.automation.org62.pages.SalesforcePage.open_tab(SalesforcePage.java:170)
+	at com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag.TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact(TS17_Verify_Do_Not_Swag.java:17)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[contains(@title, &apos;All Tabs&apos;)]&quot;}
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MOHIT-GULATI&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Mohit\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52915}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 323d583069e791d52944149a50149592
-*** Element info: {Using=xpath, value=classic_home_tab}
+System info: host: &apos;MOHIT-GULATI&apos;, ip: &apos;172.16.17.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49212}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true, webdriver.remote.sessionid: c193b83ff9af4e92b5308d645d4...}
+Session ID: c193b83ff9af4e92b5308d645d4f3534
+*** Element info: {Using=xpath, value=//img[contains(@title, &apos;All Tabs&apos;)]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.pfl.automation.org62.pages.LoginPage.logintoapplication(LoginPage.java:72)
-	at com.pfl.automation.org62.testcases.TS02_lightning.TC01(TS02_lightning.java:16)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -162,7 +170,7 @@ Session ID: 323d583069e791d52944149a50149592
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mohit\Desktop\pfl\project backups 28 may\pfl_pom_framework - Copy\testng.xml</span>
+            <span class="header-content">C:\Users\Mohit\Desktop\pfl\project backups 28 may\pom0906repo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -171,7 +179,7 @@ Session ID: 323d583069e791d52944149a50149592
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pfl.automation.org62.testcases.TS02_lightning&quot;/&gt;
+      &lt;class name=&quot;com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -213,14 +221,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC01')
-data.setCell(0, 2, 'com.pfl.automation.org62.testcases.TS02_lightning')
-data.setCell(0, 3, 23323);
+data.setCell(0, 1, 'TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact')
+data.setCell(0, 2, 'com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag')
+data.setCell(0, 3, 77258);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,26 +254,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pfl.automation.org62.testcases.TS02_lightning</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">LogIn([TestResult name=TC01 status=FAILURE method=TS02_lightning.TC01()[pri:0, instance:com.pfl.automation...)</span>
-                <span class="method-start">15683 ms</span>
+                <span class="method-name">LogIn([TestResult name=TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact status...)</span>
+                <span class="method-start">12691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TC01</span>
-                <span class="method-start">15685 ms</span>
+                <span class="method-name">TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact</span>
+                <span class="method-start">12692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Logout([TestResult name=TC01 status=FAILURE method=TS02_lightning.TC01()[pri:0, instance:com.pfl.automation...)</span>
-                <span class="method-start">39019 ms</span>
+                <span class="method-name">Logout([TestResult name=TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact status...)</span>
+                <span class="method-start">89964 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.pfl.automation.org62.testcases.TS02_lightning">
+      <class name="com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag">
         <methods>
+          <include name="TC17_01_Verify_User_not_able_Send_Swag_Do_Not_Swag_field_enabled_for_Contact"/>
           <include name="Logout"/>
-          <include name="TC01"/>
           <include name="LogIn"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.pfl.automation.org62.testcases.TS02_lightning -->
+      </class> <!-- com.pfl.automation.org62.testcases.TS17_Verify_Do_Not_Swag -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
