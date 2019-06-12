@@ -34,4 +34,3 @@ Framework Capabalities-
 12. create git repo and handle daily checkins from eclips using GIT
 13. Ablity to get screenshot for the failed test case
 14. Ablity to run scripts from Ant Build
---end of file -- 
